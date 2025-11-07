@@ -1,0 +1,19 @@
+/* Force Canva Sans globally to match live site */
+:root {
+  --brand-font: "Canva Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html, body {
+  font-family: var(--brand-font);
+}
+
+/* Ensure all common text wrappers inherit the correct font */
+._2UyCZQ, .J4GZTQ, ._28USrA, ._5eEERQ, .zYq_BQ, .a_GcMg,
+.SglrXg, .vkN2Cw, .jvAkaQ, ._8E_5FA {
+  font-family: var(--brand-font) !important;
+}
+
+/* If any editor blocks are present, lock them too */
+.ql-editor {
+  font-family: var(--brand-font) !important;
+}
