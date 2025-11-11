@@ -239,4 +239,25 @@ onBeforeUnmount(() => {
   .hero__title-accent { font-size: 64px; }
   .hero__brand { height: 36px; margin: 0 0 20px; }
 }
+
+/* Small mobile refinements */
+@media (max-width: 640px) {
+  .hero { padding: 36px 0 28px; }
+  .hero__title-lead { font-size: 44px; }
+  .hero__title-accent { font-size: 60px; }
+  .hero__desc { max-width: none; }
+  .hero__cta { flex-direction: column; gap: 12px; align-items: center; }
+  .btn { width: 90%; max-width: 360px; min-width: 0; }
+  .hero__image { max-width: 380px; }
+  .hero__features-image { max-width: 380px; }
+  .hero__features-list { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .feature__icon-wrap { height: 40px; width: 40px; }
+  .feature__icon { height: 22px; width: 22px; }
+}
+
+@media (max-width: 420px) {
+  .hero__title-lead { font-size: 40px; }
+  .hero__title-accent { font-size: 56px; }
+  .hero__image, .hero__features-image { max-width: 320px; }
+}
 </style>
