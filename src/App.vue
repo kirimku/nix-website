@@ -1,6 +1,7 @@
 <script setup>
 import ProductHero from './components/ProductHero.vue'
 import WeAreNix from './components/WeAreNix.vue'
+import ProductCategory from './components/ProductCategory.vue'
 import { products } from './data/products'
 </script>
 
@@ -24,6 +25,9 @@ import { products } from './data/products'
 
     <!-- Bottom section -->
     <WeAreNix />
+
+    <!-- Product list / category section -->
+    <ProductCategory />
   </main>
 </template>
 
