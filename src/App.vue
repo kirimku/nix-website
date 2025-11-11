@@ -1,5 +1,6 @@
 <script setup>
 import ProductHero from './components/ProductHero.vue'
+import WeAreNix from './components/WeAreNix.vue'
 import { products } from './data/products'
 </script>
 
@@ -20,6 +21,9 @@ import { products } from './data/products'
       :imageSrc="p.imageSrc"
       :featuresImageSrc="p.featuresImageSrc"
     />
+
+    <!-- Bottom section -->
+    <WeAreNix />
   </main>
 </template>
 
