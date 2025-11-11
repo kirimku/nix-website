@@ -1,0 +1,32 @@
+/* Canva Sans font faces sourced from the site's assets */
+@font-face {
+  font-display: swap;
+  font-family: "Canva Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("/fonts/a9b8e7902ec1ab885d382156f33738e5.woff2") format("woff2"),
+       url("/fonts/013277426f0d555d96c7a75503df5754.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Canva Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("/fonts/d97a6ffa507b670a5b1664f98fc1183d.woff2") format("woff2"),
+       url("/fonts/1de7434d86166b0614ff3d61cda11a54.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Canva Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("/fonts/cff149ee1e9d2be50ac77bcd86769d05.woff2") format("woff2"),
+       url("/fonts/f93a5165fac252ecfd593929c4e6146f.woff") format("woff");
+}
+
+/* Global brand font variable */
+:root {
+  --brand-font: "Canva Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html, body { font-family: var(--brand-font); }

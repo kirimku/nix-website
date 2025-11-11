@@ -1,0 +1,33 @@
+<script setup>
+import ProductHero from './components/ProductHero.vue'
+import { products } from './data/products'
+</script>
+
+<template>
+  <main class="sections">
+    <ProductHero
+      v-for="p in products"
+      :key="p.key"
+      :brandLogoSrc="p.brandLogoSrc"
+      :brandAlt="p.brandAlt"
+      :titleLead="p.titleLead"
+      :titleAccent="p.titleAccent"
+      :description="p.description"
+      :primaryCtaLabel="p.primaryCtaLabel"
+      :primaryCtaHref="p.primaryCtaHref"
+      :secondaryCtaLabel="p.secondaryCtaLabel"
+      :secondaryCtaHref="p.secondaryCtaHref"
+      :imageSrc="p.imageSrc"
+      :featuresImageSrc="p.featuresImageSrc"
+    />
+  </main>
+</template>
+
+<style scoped>
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  padding: 24px 0 64px;
+}
+</style>
