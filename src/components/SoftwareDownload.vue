@@ -116,8 +116,8 @@ const downloads = [
 }
 
 .sd-figure {
-  /* width: 100%;
-  max-width: 560px; */
+  width: 100%;
+  max-width: 560px;
   aspect-ratio: 3 / 4;
   overflow: hidden;
   border-top-right-radius: 120px 120px;

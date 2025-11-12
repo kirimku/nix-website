@@ -178,6 +178,6 @@ const props = defineProps({
 @media (max-width: 640px) {
   .creators__grid { grid-template-columns: repeat(1, min(340px, 92vw)); }
   .creator-card__media img,
-  .creator-card__media video { aspect-ratio: 4 / 5; }
+  .creator-card__media video { aspect-ratio: 4 / 6; }
 }
 </style>

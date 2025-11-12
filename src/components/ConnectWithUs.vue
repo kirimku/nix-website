@@ -31,7 +31,7 @@ const instagramUrl = '#'
 <style scoped>
 .connect-with-us {
   max-width: 1200px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 0 24px;
 }
 
@@ -43,10 +43,10 @@ const instagramUrl = '#'
 }
 
 .cwu-figure {
-  /* width: 100%; */
-  /* max-width: 560px; */
+  width: 100%;
+  max-width: 560px;
   aspect-ratio: 4 / 5;
-  margin: 51px;
+  margin: 0px;
   overflow: hidden;
   border-top-right-radius: 120px 120px;
 }
@@ -73,7 +73,7 @@ const instagramUrl = '#'
 }
 
 .cwu-actions {
-  margin-top: 28px;
+  /* margin-top: 28px; */
   display: flex;
   /* justify-content: center; */
 }
