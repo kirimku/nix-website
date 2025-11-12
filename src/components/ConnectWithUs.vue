@@ -7,7 +7,7 @@ const instagramUrl = '#'
     <div class="cwu-inner">
       <figure class="cwu-figure">
         <img
-          src="/_assets/media/13f1bb06b67682d9d1f7b3d944ef940b.png"
+          src="/_assets/media/about-us.png"
           alt="NIX headset in moody lighting"
         />
       </figure>
@@ -43,9 +43,10 @@ const instagramUrl = '#'
 }
 
 .cwu-figure {
-  width: 100%;
-  max-width: 560px;
+  /* width: 100%; */
+  /* max-width: 560px; */
   aspect-ratio: 4 / 5;
+  margin: 51px;
   overflow: hidden;
   border-top-right-radius: 120px 120px;
 }
@@ -59,8 +60,8 @@ const instagramUrl = '#'
 .cwu-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .cwu-title {
@@ -74,7 +75,7 @@ const instagramUrl = '#'
 .cwu-actions {
   margin-top: 28px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .cwu-circle {

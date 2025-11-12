@@ -9,9 +9,10 @@ const props = defineProps({
       {
         title: 'Unboxing Lucent',
         subtitle: 'Ambience Desk Lamp',
-        imageSrc: '/_assets/media/7a27b430f2f456cadf7d171dd6482321.png',
+        imageSrc: '/_assets/media/unboxing-lucent.png',
         imageAlt: 'Unboxing Lucent',
         handle: '@briansolid',
+        videoSrc: '/_assets/media/@briansolid.mp4',
       },
       {
         title: 'NIX 7-in-1',
@@ -19,6 +20,7 @@ const props = defineProps({
         imageSrc: '/_assets/media/87a8e6a9f535bb8886e75ed44ae3bcf2.png',
         imageAlt: 'Travel Kit',
         handle: '@scefsko',
+        videoSrc: '/_assets/media/@scefsko.mp4',
       },
       {
         title: 'Smartwatch',
@@ -26,6 +28,7 @@ const props = defineProps({
         imageSrc: '/_assets/media/90e8314b2d7be4ead6dca45bab9bcaa7.png',
         imageAlt: 'Smartwatch',
         handle: '@marcoput',
+        videoSrc: '/_assets/media/@marcoput.mp4',
       },
       {
         title: 'Keyboard iPad',
@@ -33,6 +36,7 @@ const props = defineProps({
         imageSrc: '/_assets/media/608e5d4c9705f2fd8c8296cbf78634bc.png',
         imageAlt: 'Keyboard iPad at cafe',
         handle: '@edwinyg',
+        videoSrc: '/_assets/media/@edwinyg.mp4',
       },
     ])
   }
@@ -49,12 +53,22 @@ const props = defineProps({
     <div class="creators__grid">
       <article v-for="(it, i) in items" :key="i" class="creator-card">
         <div class="creator-card__media">
-          <img :src="it.imageSrc" :alt="it.imageAlt" />
-          <span class="creator-card__brand">nix</span>
+          <video
+            v-if="it.videoSrc"
+            :src="it.videoSrc"
+            :poster="it.imageSrc"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          />
+          <img v-else :src="it.imageSrc" :alt="it.imageAlt" />
+          <!-- <span class="creator-card__brand">nix</span>
           <div class="creator-card__overlay">
             <h3 class="creator-card__title">{{ it.title }}</h3>
             <p class="creator-card__subtitle">{{ it.subtitle }}</p>
-          </div>
+          </div> -->
         </div>
         <p class="creator-card__handle">{{ it.handle }}</p>
       </article>
@@ -73,18 +87,18 @@ const props = defineProps({
   display: flex;
   align-items: baseline;
   justify-content: center;
-  gap: 12px;
-  margin: 0;
+  gap: 15px;
+  margin: 50px;
 }
 .creators__heading-text {
-  color: #e7e7e7;
-  font-weight: 600;
-  font-size: clamp(24px, 3.6vw, 40px);
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 45px;
 }
 .creators__logo {
-  height: 28px;
+  height: 30px;
   width: auto;
-  transform: translateY(3px);
+  /* transform: translateY(3px); */
 }
 
 .creators__grid {
@@ -108,11 +122,12 @@ const props = defineProps({
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0,0,0,0.2);
 }
-.creator-card__media img {
+.creator-card__media img,
+.creator-card__media video {
   display: block;
   width: 100%;
   height: 100%;
-  aspect-ratio: 4 / 5; /* tall card look */
+  aspect-ratio: 4 / 6; 
   object-fit: cover;
 }
 
@@ -148,9 +163,9 @@ const props = defineProps({
 }
 
 .creator-card__handle {
-  margin: 0;
-  color: #cfcfcf;
-  font-size: 16px;
+    margin: 0;
+    color: #ffffff;
+    font-size: 24px;
 }
 
 /* Responsive */
@@ -162,6 +177,7 @@ const props = defineProps({
 }
 @media (max-width: 640px) {
   .creators__grid { grid-template-columns: repeat(1, min(340px, 92vw)); }
-  .creator-card__media img { aspect-ratio: 4 / 5; }
+  .creator-card__media img,
+  .creator-card__media video { aspect-ratio: 4 / 5; }
 }
 </style>

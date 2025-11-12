@@ -42,7 +42,7 @@ const downloads = [
 
       <figure class="sd-figure">
         <img
-          src="/_assets/media/1f988bc1fe87e390fdfff0772360c2db.png"
+          src="/_assets/media/software.png"
           alt="Keyboard and mouse with hand pressing keys"
         />
       </figure>
@@ -60,7 +60,7 @@ const downloads = [
 .sd-inner {
   display: grid;
   grid-template-columns: 1fr 520px;
-  align-items: center;
+  align-items: start;
   gap: 40px;
 }
 
@@ -116,8 +116,8 @@ const downloads = [
 }
 
 .sd-figure {
-  width: 100%;
-  max-width: 560px;
+  /* width: 100%;
+  max-width: 560px; */
   aspect-ratio: 3 / 4;
   overflow: hidden;
   border-top-right-radius: 120px 120px;
@@ -147,7 +147,7 @@ const downloads = [
     gap: 28px;
   }
   .sd-figure {
-    order: 2;
+    order: unset;
     justify-self: center;
     border-top-right-radius: 80px 80px;
     max-width: min(92vw, 520px);
