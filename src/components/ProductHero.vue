@@ -104,11 +104,16 @@ onBeforeUnmount(() => {
   background: #0e0e0f;
   color: #fff;
   padding: 48px 0 32px;
+  height: 100%;
+  position: relative;
 }
 .hero__inner {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .hero__header {
   display: none;
@@ -119,8 +124,18 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 768px) {
+  /* Show brand on mobile at the top of the slide */
+  .hero { padding-top: 72px; }
   .hero__brand {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 24px;
+    transform: none;
+    height: 28px;
+    width: auto;
+    margin: 0;
+    z-index: 3;
   }
 }
 
@@ -129,6 +144,8 @@ onBeforeUnmount(() => {
   grid-template-columns: 1.05fr 0.95fr;
   gap: 32px;
   align-items: center;
+  /* allow content to shrink within viewport */
+  min-height: 0;
 }
 .hero__title {
   margin: 0 0 16px;
@@ -240,31 +257,51 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 960px) {
-  .hero__content { grid-template-columns: 1fr; }
+  .hero { padding: 32px 0 24px; }
+  .hero__content { grid-template-columns: 1fr; align-items: center; height: 100%; }
   .hero__visual { order: -1; }
-  .hero__title-lead { font-size: 48px; }
-  .hero__title-accent { font-size: 64px; }
-  .hero__brand { height: 55px; margin: 0 0 120px; }
-}
-
-/* Small mobile refinements */
-@media (max-width: 640px) {
-  .hero { padding: 36px 0 28px; }
-  .hero__title-lead { font-size: 44px; }
-  .hero__title-accent { font-size: 49px; }
-  .hero__desc { max-width: none; }
-  .hero__cta { flex-direction: column; gap: 12px; align-items: center; }
-  .btn { width: 90%; max-width: 360px; min-width: 0; }
-  .hero__image { max-width: 380px; }
-  .hero__features-image { max-width: 380px; }
-  .hero__features-list { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .hero__title-lead { font-size: clamp(24px, 6.5vmin, 40px); }
+  .hero__title-accent { font-size: clamp(30px, 8.5vmin, 54px); }
+  .hero__desc { font-size: clamp(14px, 3vmin, 17px); line-height: 1.6; }
+  .btn { height: 40px; font-size: 15px; padding: 0 18px; }
+  .hero__brand {         
+    height: 32px;
+    margin: 7px 0 80px; 
+  }
+  /* constrain image to fit viewport */
+  .hero__image {
+    height: auto;
+    max-height: 42vh;
+    width: auto;
+    max-width: min(92vw, 480px);
+    object-fit: contain;
+  }
+  .hero__features-image { max-height: 20vh; object-fit: contain; }
+  .hero__features-list {
+    max-height: 22vh;
+    overflow: hidden;
+    gap: 16px;
+  }
   .feature__icon-wrap { height: 40px; width: 40px; }
   .feature__icon { height: 22px; width: 22px; }
 }
 
+/* Small mobile refinements */
+@media (max-width: 640px) {
+  .hero { padding: 28px 0 22px; }
+  .hero__title-lead { font-size: clamp(22px, 6.5vmin, 36px); }
+  .hero__title-accent { font-size: clamp(26px, 8vmin, 44px); }
+  .hero__desc { max-width: none; }
+  .hero__cta { flex-direction: column; gap: 12px; align-items: center; }
+  .btn { width: 90%; max-width: 360px; min-width: 0; height: 40px; font-size: 15px; }
+  .hero__image { max-width: 380px; max-height: 40vh; }
+  /* hide features on small phones to ensure full-screen fit */
+  .hero__features-image, .hero__features-list { display: none; }
+}
+
 @media (max-width: 420px) {
-  .hero__title-lead { font-size: 40px; }
-  .hero__title-accent { font-size: 49px; }
+  .hero__title-lead { font-size: clamp(20px, 6.2vmin, 32px); }
+  .hero__title-accent { font-size: clamp(24px, 7.6vmin, 40px); }
   .hero__image, .hero__features-image { max-width: 320px; }
 }
 </style>
