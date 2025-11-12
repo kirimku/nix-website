@@ -25,18 +25,12 @@ const downloads = [
           <div class="sd-col sd-col--files" role="columnheader">FILE</div>
           <div class="sd-col sd-col--links" role="columnheader">LINK</div>
 
-          <div class="sd-col sd-col--files" role="cell">
-            <ul class="sd-list">
-              <li v-for="d in downloads" :key="d.name" class="sd-item">{{ d.name }}</li>
-            </ul>
-          </div>
-          <div class="sd-col sd-col--links" role="cell">
-            <ul class="sd-list">
-              <li v-for="d in downloads" :key="d.href" class="sd-item">
-                <a :href="d.href" class="sd-link">Download Here</a>
-              </li>
-            </ul>
-          </div>
+          <template v-for="d in downloads" :key="d.name">
+            <div class="sd-col sd-col--files" role="cell">{{ d.name }}</div>
+            <div class="sd-col sd-col--links" role="cell">
+              <a :href="d.href" class="sd-link">Download Here</a>
+            </div>
+          </template>
         </div>
       </div>
 
