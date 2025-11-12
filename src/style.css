@@ -58,7 +58,7 @@ button:focus-visible {
 #app {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 2rem 3rem;
+  /* padding: 2rem 2rem 3rem; */
 }
 
 /* Keep a single dark theme to match the design */
