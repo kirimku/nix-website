@@ -7,25 +7,25 @@ const props = defineProps({
       {
         title: 'AUDIO & WEARABLES',
         description: 'Lifestyle audio products for active mobility and everyday use.',
-        imageSrc: '/_assets/media/13f1bb06b67682d9d1f7b3d944ef940b.png',
+        imageSrc: '/_assets/media/7529e0eeae333004ea539c89d0abfae9.png',
         imageAlt: 'Audio & wearables',
       },
       {
-        title: 'CHARGING & POWER\nSOLUTIONS',
+        title: 'CHARGING & POWER SOLUTIONS',
         description: 'Power products with advanced charging tech.',
-        imageSrc: '/_assets/media/1f988bc1fe87e390fdfff0772360c2db.png',
+        imageSrc: '/_assets/media/charger.png',
         imageAlt: 'Charging & power solutions',
       },
       {
-        title: 'PRODUCTIVITY TOOLS &\nACCESSORIES',
+        title: 'PRODUCTIVITY TOOLS & ACCESSORIES',
         description: 'Gear designed to boost work efficiency and multitasking.',
-        imageSrc: '/_assets/media/22b7859e6277a0bf63f1d8815efe2ced.png',
+        imageSrc: '/_assets/media/dd02e67a2266005fd9c99c6364b4271d.png',
         imageAlt: 'Productivity tools & accessories',
       },
       {
-        title: 'SMART LIGHTING &\nAMBIENCE',
+        title: 'SMART LIGHTING & AMBIENCE',
         description: 'Products that enhance mood and space.',
-        imageSrc: '/_assets/media/608e5d4c9705f2fd8c8296cbf78634bc.png',
+        imageSrc: '/_assets/media/c5e74de7731f79153e6250e8c7ebf0a7.png',
         imageAlt: 'Smart lighting & ambience',
       }
     ])
@@ -77,19 +77,19 @@ const props = defineProps({
   /* Large rounded corners to match design */
   border-top-right-radius: 70px 70px;
   border-bottom-left-radius: 70px 70px;
-  padding: 24px 24px 26px;
-  min-height: 360px; /* ensure card is taller than width */
+  padding: 24px;
+  /* min-height: 360px;  */
   box-shadow: 0 2px 12px rgba(0,0,0,0.15);
   overflow: hidden;
 }
 
 .cat-card__figure {
   background: #efefef;
-  border-radius: 18px;
-  border-top-right-radius: 100px 100px;
+  border-radius: 0px;
+  border-top-right-radius: 46px 46px;
   overflow: hidden;
   margin: 0 0 12px;
-  aspect-ratio: 4 / 3; /* make the image area taller */
+  aspect-ratio: 4 / 4; /* make the image area taller */
 }
 .cat-card__figure img {
   display: block;
@@ -101,16 +101,18 @@ const props = defineProps({
 .cat-card__title {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 17px; /* Increased font size */
   letter-spacing: 0.03em;
   line-height: 1.3;
   margin: 0 0 8px;
+  text-align: center; /* Centered text */
 }
 
 .cat-card__desc {
-  font-size: 12px;
+  font-size: 14px; /* Increased font size */
   color: #555;
   line-height: 1.5;
+  text-align: center; /* Centered text */
 }
 
 /* Responsive */
@@ -147,7 +149,7 @@ const props = defineProps({
   }
   .cat-card__figure {
     border-top-right-radius: 72px 72px;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 4;
   }
 }
 </style>

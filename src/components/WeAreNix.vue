@@ -2,7 +2,7 @@
 const props = defineProps({
   logoSrc: { type: String, default: '/_assets/media/nix-logo.png' },
   logoAlt: { type: String, default: 'NIX' },
-  imageSrc: { type: String, default: '/_assets/media/c789264b6423d2509c3a4103e691e9d4.png' },
+  imageSrc: { type: String, default: '/_assets/media/we-are-nix.png' },
   imageAlt: { type: String, default: 'NIX product lineup' },
   title: { type: String, default: 'We Are' },
 })
@@ -50,33 +50,33 @@ const props = defineProps({
 }
 
 .about__title-text {
-  font-weight: 600;
+  font-weight: 300;
   font-size: clamp(32px, 5vw, 52px);
   letter-spacing: 0.01em;
 }
 
 .about__logo {
-  height: 28px;
+  height: 35px;
   width: auto;
   display: inline-block;
-  transform: translateY(2px);
+  /* transform: translateY(2px); */
 }
 
 .about__lead {
-  color: #cfcfcf;
-  font-size: 18px;
-  line-height: 1.8;
+  color: #ffffff;
+  font-size: 22px;
+  /* line-height: 1.8; */
   margin: 0 0 14px;
 }
 
 .about__body {
-  color: #bcbcbc;
-  font-size: 18px;
-  line-height: 1.8;
+  color: #ffffff;
+  font-size: 22px;
+  /* line-height: 1.8; */
 }
 
 .about__visual {
-  border-radius: 28px;
+  border-radius: 0px 100px 0px 0px;
   overflow: hidden;
   background: #1a1a1a;
 }

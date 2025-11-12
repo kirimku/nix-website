@@ -237,7 +237,7 @@ onBeforeUnmount(() => {
   .hero__visual { order: -1; }
   .hero__title-lead { font-size: 48px; }
   .hero__title-accent { font-size: 64px; }
-  .hero__brand { height: 36px; margin: 0 0 20px; }
+  .hero__brand { height: 55px; margin: 0 0 120px; }
 }
 
 /* Small mobile refinements */

@@ -12,8 +12,8 @@ export const products = [
     primaryCtaHref: '#chron-buy',
     secondaryCtaLabel: 'Shop All',
     secondaryCtaHref: '#chron-shop',
-    imageSrc: '/images/87e22a62965f141aa08e93699b0b3527.jpg', // placeholder until product image provided
-    featuresImageSrc: '/_assets/media/13f1bb06b67682d9d1f7b3d944ef940b.png',
+    imageSrc: '_assets/media/1f988bc1fe87e390fdfff0772360c2db.png', // placeholder until product image provided
+    featuresImageSrc: '/_assets/media/cron-subfeature.png',
   },
   {
     key: 'rytm-headphone',
@@ -27,7 +27,7 @@ export const products = [
     primaryCtaHref: '#rytm-buy',
     secondaryCtaLabel: 'Shop All',
     secondaryCtaHref: '#rytm-shop',
-    imageSrc: '/images/87e22a62965f141aa08e93699b0b3527.jpg',
+    imageSrc: '_assets/media/22b7859e6277a0bf63f1d8815efe2ced.png', // placeholder until product image provided
     featuresImageSrc: '/_assets/media/90e8314b2d7be4ead6dca45bab9bcaa7.png',
   },
   {
@@ -42,7 +42,7 @@ export const products = [
     primaryCtaHref: '#keyboard-buy',
     secondaryCtaLabel: 'Shop All',
     secondaryCtaHref: '#keyboard-shop',
-    imageSrc: '/images/87e22a62965f141aa08e93699b0b3527.jpg', // placeholder
+    imageSrc: '_assets/media/87a8e6a9f535bb8886e75ed44ae3bcf2.png', // placeholder until product image provided
     featuresImageSrc: '/_assets/media/608e5d4c9705f2fd8c8296cbf78634bc.png',
   },
   {
@@ -57,8 +57,8 @@ export const products = [
     primaryCtaHref: '#clarus-buy',
     secondaryCtaLabel: 'Shop All',
     secondaryCtaHref: '#clarus-shop',
-    imageSrc: '/images/87e22a62965f141aa08e93699b0b3527.jpg', // placeholder
-    featuresImageSrc: '/_assets/media/1f988bc1fe87e390fdfff0772360c2db.png',
+    imageSrc: '_assets/media/7a27b430f2f456cadf7d171dd6482321.png', // placeholder until product image provided
+    featuresImageSrc: '/_assets/media/c789264b6423d2509c3a4103e691e9d4.png',
   },
   {
     key: 'lucent-ambience-hla-001',
@@ -72,22 +72,7 @@ export const products = [
     primaryCtaHref: '#hla001-buy',
     secondaryCtaLabel: 'Shop All',
     secondaryCtaHref: '#hla001-shop',
-    imageSrc: '/images/87e22a62965f141aa08e93699b0b3527.jpg', // placeholder
-    featuresImageSrc: '/_assets/media/22b7859e6277a0bf63f1d8815efe2ced.png',
-  },
-  {
-    key: 'lucent-ambience-hla-002',
-    brandLogoSrc: '/_assets/media/nix-logo.png',
-    brandAlt: 'NIX',
-    titleLead: 'Lucent Ambience',
-    titleAccent: 'Desk Lamp HLA-002',
-    description:
-      'Transform your space with NIX Lucent Smart RGB Light. Featuring 16 million color options, music sync mode, and smart app control — it’s the perfect blend of style, ambiance, and technology for any setup.',
-    primaryCtaLabel: 'Buy Now',
-    primaryCtaHref: '#hla002-buy',
-    secondaryCtaLabel: 'Shop All',
-    secondaryCtaHref: '#hla002-shop',
-    imageSrc: '/images/87e22a62965f141aa08e93699b0b3527.jpg', // placeholder
-    featuresImageSrc: '/_assets/media/87a8e6a9f535bb8886e75ed44ae3bcf2.png',
+    imageSrc: '_assets/media/lucent.png', // placeholder until product image provided
+    featuresImageSrc: '/_assets/media/lucent-sub.png',
   },
 ]
